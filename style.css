@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    color: navy;
+}
+body {
+    background-color: lightskyblue;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        font-size: 40px;
+    }
+}
+
+.header {
+    width: 100vw;
+    background-color: rgb(126, 160, 235);
+    text-align: center;
+    padding: 1px 0;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: navy;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: blue;
+    text-underline-offset: 10%;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-around;
+}
+
+.box-item {
+    background-color: lightgreen;
+    border-radius: 20px;
+    text-align: center;
+    overflow: hidden;
+    height: 70%;
+    transition: height 0.3s ease;
+    word-wrap: break-word;
+}
+
+.box-item:hover {
+    height: 110%;
+}
+
+.box-item .text {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.box-item:hover .text {
+    opacity: 1;
+}
+
+
+.a-bullet {
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.anim {
+    text-align: center;
+}
+
+.fade {
+    opacity: 0;
+    animation: fadeIn 3s forwards; 
+}
+
+.fade:nth-child(1) {
+    animation-delay: 0s;
+
+}
+
+
+.fade:nth-child(2) {
+    animation-delay: 1s;
+
+}
+
+
+.fade:nth-child(3) {
+    animation-delay: 2s;
+
+}
+
+
+.fade:nth-child(4) {
+    animation-delay: 3s;
+}
+
+
+.duck {
+    text-align: center;
+}
